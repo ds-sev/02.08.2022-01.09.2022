@@ -27,7 +27,9 @@ string GetQuarter (int xc, int yc)
 }
 
 string result = GetQuarter(x, y);
+string result2 = GetQuarter(x, y);
 Console.WriteLine(result);
+Console.WriteLine(result2);
 
 
 
