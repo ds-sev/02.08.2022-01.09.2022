@@ -7,10 +7,25 @@
 
 Console.WriteLine("Введите целое положительное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-int sum = default;                                         // 0
+// int sum = default;                                         // 0
 
-for (int i = 1; i <= num; i++)
+// for (int i = 1; i <= num; i++)
+// {
+//     sum = sum + i;                                         // sum += i 
+// }
+
+
+
+
+int SumNumbers(int number)
 {
-    sum = sum + i;                                         // sum += i 
+    int sum = 0;
+    for (int i = 1; i <= number; i++)
+    {
+        sum = sum + i;                                         // sum += i 
+    } 
+    return sum;   
 }
-Console.WriteLine($"Сумма числел от 1 до {num}: {sum}.");
+
+int result = SumNumbers(num);
+Console.WriteLine($"Сумма числел от 1 до {num}: {result}.");
