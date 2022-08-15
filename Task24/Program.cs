@@ -27,5 +27,9 @@ int SumNumbers(int number)
     return sum;   
 }
 
-int result = SumNumbers(num);
-Console.WriteLine($"Сумма числел от 1 до {num}: {result}.");
+if (num > 0)
+{
+    int result = SumNumbers(num);
+    Console.WriteLine($"Сумма числел от 1 до {num}: {result}.");
+}
+else Console.WriteLine("Некорректный ввод. Требуется положительно число.");
